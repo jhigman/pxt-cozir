@@ -9,7 +9,7 @@
 
 
 /**
- * Let's Talk Science! COZIR block
+ * Let's Talk Science! COZIR2 block
  */
 //% color=190 weight=100 icon="\uf135" block="Let's Talk Science!"
 namespace COZIR2 {
