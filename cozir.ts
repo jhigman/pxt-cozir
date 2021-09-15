@@ -40,8 +40,18 @@ namespace COZIR2 {
     })
 
     /**
-    * Return the CO2 concentration in parts per million (PPM).
-    */
+     * Return the version.
+     */
+    //% blockId=device_version_toggle block="Version"
+    export function Version(): string {
+        serial.writeString("Y\r\n")
+        basic.pause(200)
+        return response
+    }
+
+    /**
+     * Return the CO2 concentration in parts per million (PPM).
+     */
     //% blockId=device_co2_toggle block="CO2 (PPM)"
     export function Co2(): number {
         serial.writeString("Z\r\n")
