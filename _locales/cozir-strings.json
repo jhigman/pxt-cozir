@@ -5,7 +5,7 @@
   "COZIR.relativeHumidity|block": "relative humidity (RH)",
   "COZIR.setupCozir|block": "set up COZIR",
   "COZIR.temperature|block": "temperature (°C)",
-  "COZIR.version|block": "version",
+  "COZIR.firmwareVersion|block": "version",
   "COZIR|block": "Let's Talk Science!",
   "{id:category}COZIR": "COZIR"
 }
