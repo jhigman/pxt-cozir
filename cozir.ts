@@ -23,20 +23,20 @@ namespace COZIR {
 
     serial.onDataReceived(serial.delimiters(Delimiters.NewLine), () => {
         response = serial.readUntil(serial.delimiters(Delimiters.NewLine))
-        //basic.showString(response)
-        value_str = response.substr(3, 5)
-        let value = parseInt(value_str)
+        basic.showString(response)
+        // value_str = response.substr(3, 5)
+        // let value = parseInt(value_str)
         // basic.showString(response.charAt(1))
-        if (response.charAt(1) == 'Z') {
-            let co2_uncompensated = value
-            co2 = co2_uncompensated + (altitude * 556) / 10000
-        }
-        if (response.charAt(1) == 'T') {
-            temp = (value - 1000) / 10
-        }
-        if (response.charAt(1) == 'H') {
-            rh = value / 10
-        }
+        // if (response.charAt(1) == 'Z') {
+        //     let co2_uncompensated = value
+        //     co2 = co2_uncompensated + (altitude * 556) / 10000
+        // }
+        // if (response.charAt(1) == 'T') {
+        //     temp = (value - 1000) / 10
+        // }
+        // if (response.charAt(1) == 'H') {
+        //     rh = value / 10
+        // }
     })
 
     /**
