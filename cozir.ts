@@ -22,8 +22,9 @@ namespace COZIR {
     let altitude = 0
 
     serial.onDataReceived(serial.delimiters(Delimiters.NewLine), () => {
+        basic.showString('onDataReceived')
         response = serial.readUntil(serial.delimiters(Delimiters.NewLine))
-        basic.showString(response)
+        // basic.showString(response)
         // value_str = response.substr(3, 5)
         // let value = parseInt(value_str)
         // basic.showString(response.charAt(1))
@@ -44,7 +45,7 @@ namespace COZIR {
      */
     //% blockId=device_version_toggle block="firmware version"
     export function firmwareVersion(): string {
-        basic.showString('version:')
+        // basic.showString('version:')
         serial.writeString("Y\r\n")
         basic.pause(200)
         return response
