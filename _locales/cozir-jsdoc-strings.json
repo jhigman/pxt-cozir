@@ -7,4 +7,5 @@
   "COZIR.relativeHumidity": "Return the relative humidty as a percentage.",
   "COZIR.setupCozir": "Setup the COZIR module -only used during manufacturing\nthis sets the mode of the COZIR to 'request'.",
   "COZIR.temperature": "Return the temperature in degrees Celsius."
+  "COZIR.version": "Return the version of the COZIR sensor firmware."
 }
