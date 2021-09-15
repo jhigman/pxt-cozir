@@ -9,10 +9,10 @@
 
 
 /**
- * Let's Talk Science! COZIR2 block
+ * Let's Talk Science! COZIR block
  */
 //% color=190 weight=100 icon="\uf135" block="Let's Talk Science!"
-namespace COZIR2 {
+namespace COZIR {
 
     let value_str = ""
     let co2 = 0
