@@ -44,6 +44,7 @@ namespace COZIR {
      */
     //% blockId=device_version_toggle block="firmware version"
     export function firmwareVersion(): string {
+        basic.showString('version:')
         serial.writeString("Y\r\n")
         basic.pause(200)
         return response
