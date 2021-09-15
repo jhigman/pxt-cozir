@@ -1,7 +1,7 @@
 {
     "name": "cozir",
-    "version": "0.1.0",
-    "description": "MakeCode LTS Cozir sensor package",
+    "version": "0.1.1",
+    "description": "MakeCode LTS Cozir sensor package with extras",
     "license": "MIT",
     "dependencies": {
         "core": "*"
@@ -9,8 +9,8 @@
     "files": [
         "README.md",
         "cozir.ts",
-        "_locales/fr/cozir-strings.json",
-        "_locales/fr/cozir-jsdoc-strings.json"
+        "_locales/cozir-strings.json",
+        "_locales/cozir-jsdoc-strings.json"
     ],
     "public": true
 }
